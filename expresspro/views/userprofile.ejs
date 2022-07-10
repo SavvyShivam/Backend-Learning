@@ -1,0 +1,17 @@
+<h1> This is the users profile page</h1>
+<h2> 
+    <!-- passing dynamic data in template -->
+    <%= user_id %> 
+</h2>
+
+<h2>
+    <%= user.username %>
+    <%= user.age %>
+    <%= user.address %>
+
+    <!-- <%= user.friends %>  return actual array  -->
+</h2>
+
+<% user.friends.forEach((friend)=>{  %> 
+ <h3> <%= friend %> </h3>
+<% }) %>
